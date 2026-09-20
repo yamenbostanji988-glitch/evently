@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Music Festival",
+        "date": "October 10, 2026",
+        "location": "Amman, Jordan",
+        "category": "Music",
+        "icon": "🎵",
+        "description": "Enjoy an exciting music festival with live performances and entertainment."
+    },
+    {
+        "id": 2,
+        "name": "Tech Conference",
+        "date": "October 15, 2026",
+        "location": "Amman, Jordan",
+        "category": "Technology",
+        "icon": "💻",
+        "description": "Explore the latest technology trends and connect with technology professionals."
+    },
+    {
+        "id": 3,
+        "name": "Art Exhibition",
+        "date": "October 20, 2026",
+        "location": "Amman, Jordan",
+        "category": "Art",
+        "icon": "🎨",
+        "description": "Discover creative artworks and enjoy an inspiring art exhibition."
+    }
+]
