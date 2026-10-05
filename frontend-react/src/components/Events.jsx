@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import EventCard from "./EventCard";
 import EventModal from "./EventModal";
@@ -170,5 +169,3 @@ function Events({ onBook }) {
 }
 
 export default Events;
-
-
