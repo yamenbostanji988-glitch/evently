@@ -20,7 +20,7 @@ function App() {
 
     useEffect(function() {
 
-        fetch("http://localhost:5000/api/bookings")
+        fetch("https://evently-ti2f.onrender.com/api/bookings")
             .then(function(response) {
                 if (!response.ok) {
                     throw new Error("Could not load bookings.");
@@ -57,7 +57,7 @@ function App() {
             icon: event.icon
         };
 
-        fetch("http://localhost:5000/api/bookings", {
+        fetch("https://evently-ti2f.onrender.com/api/bookings", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -98,7 +98,7 @@ function App() {
     function handleCancelBooking(bookingId) {
 
         fetch(
-            "http://localhost:5000/api/bookings/" + bookingId,
+            "https://evently-ti2f.onrender.com/api/bookings/" + bookingId,
             {
                 method: "DELETE"
             }
