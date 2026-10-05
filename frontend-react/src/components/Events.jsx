@@ -12,7 +12,7 @@ function Events({ onBook }) {
 
     useEffect(function() {
 
-        fetch("http://localhost:5000/api/events")
+        fetch("https://evently-ti2f.onrender.com/api/events")
             .then(function(response) {
                 if (!response.ok) {
                     throw new Error("Server response was not successful.");
@@ -170,4 +170,5 @@ function Events({ onBook }) {
 }
 
 export default Events;
+
 
