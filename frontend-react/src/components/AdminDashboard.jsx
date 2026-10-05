@@ -23,7 +23,7 @@ function AdminDashboard() {
 
     function loadEvents() {
 
-        fetch("http://localhost:5000/api/events")
+        fetch("https://evently-ti2f.onrender.com/api/events")
             .then(function(response) {
                 return response.json();
             })
@@ -37,7 +37,7 @@ function AdminDashboard() {
 
     function loadBookings() {
 
-        fetch("http://localhost:5000/api/bookings")
+        fetch("https://evently-ti2f.onrender.com/api/bookings")
             .then(function(response) {
                 return response.json();
             })
@@ -66,8 +66,8 @@ function AdminDashboard() {
         event.preventDefault();
 
         const url = editingEvent
-            ? "http://localhost:5000/api/events/" + editingEvent.id
-            : "http://localhost:5000/api/events";
+            ? "https://evently-ti2f.onrender.com/api/events/" + editingEvent.id
+            : "https://evently-ti2f.onrender.com/api/events";
 
         const method = editingEvent ? "PUT" : "POST";
 
@@ -129,7 +129,7 @@ function AdminDashboard() {
         }
 
         fetch(
-            "http://localhost:5000/api/events/" + eventId,
+            "https://evently-ti2f.onrender.com/api/events/" + eventId,
             {
                 method: "DELETE"
             }
@@ -156,7 +156,7 @@ function AdminDashboard() {
         }
 
         fetch(
-            "http://localhost:5000/api/bookings/" + bookingId,
+            "https://evently-ti2f.onrender.com/api/bookings/" + bookingId,
             {
                 method: "DELETE"
             }
